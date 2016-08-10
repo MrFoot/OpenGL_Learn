@@ -28,6 +28,8 @@ void renderScene(void)
 
 	glutSwapBuffers();
 
+	printf("...");
+
 }
 
 
