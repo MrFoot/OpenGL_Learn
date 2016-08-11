@@ -50,5 +50,16 @@ namespace Transfrom
 
             return newV;
         }
+
+        
+        public Matrix4x4 Transpose()
+        {
+            Matrix4x4 t = new Matrix4x4();
+            for (int r = 1; r <= 4; r++)
+                for (int c = 1; c <= 4; c++)
+                    t[r, c] = this[c, r];
+
+            return t;
+        }
     }
 }

@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.cbx = new System.Windows.Forms.CheckBox();
+            this.cby = new System.Windows.Forms.CheckBox();
+            this.cbz = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,11 +52,45 @@
             this.trackBar1.TabIndex = 0;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
+            // cbx
+            // 
+            this.cbx.AutoSize = true;
+            this.cbx.Location = new System.Drawing.Point(475, 13);
+            this.cbx.Name = "cbx";
+            this.cbx.Size = new System.Drawing.Size(30, 16);
+            this.cbx.TabIndex = 1;
+            this.cbx.Text = "x";
+            this.cbx.UseVisualStyleBackColor = true;
+            this.cbx.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // cby
+            // 
+            this.cby.AutoSize = true;
+            this.cby.Location = new System.Drawing.Point(475, 54);
+            this.cby.Name = "cby";
+            this.cby.Size = new System.Drawing.Size(30, 16);
+            this.cby.TabIndex = 2;
+            this.cby.Text = "y";
+            this.cby.UseVisualStyleBackColor = true;
+            // 
+            // cbz
+            // 
+            this.cbz.AutoSize = true;
+            this.cbz.Location = new System.Drawing.Point(475, 96);
+            this.cbz.Name = "cbz";
+            this.cbz.Size = new System.Drawing.Size(30, 16);
+            this.cbz.TabIndex = 3;
+            this.cbz.Text = "z";
+            this.cbz.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 561);
+            this.Controls.Add(this.cbz);
+            this.Controls.Add(this.cby);
+            this.Controls.Add(this.cbx);
             this.Controls.Add(this.trackBar1);
             this.DoubleBuffered = true;
             this.Name = "Form1";
@@ -70,6 +107,9 @@
 
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.CheckBox cbx;
+        private System.Windows.Forms.CheckBox cby;
+        private System.Windows.Forms.CheckBox cbz;
     }
 }
 
